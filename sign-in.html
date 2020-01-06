@@ -5,31 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/7a9ff9fe8b.js" crossorigin="anonymous"></script>
     <title>sign-in</title>
 </head>
-<body>
-    <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="my-modal-title">Sign In</h5>
-                    <button class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+<body class="text-center">
+    <div class="container signin-container mx-auto mt-5">
+
+        <form method="post" action="" class="mx-auto">
+            <div class="form-group">
+    
+                <img src="images/impulse_signin-logo_1.jpg" alt="" class="img-fluid signin-logo mx-auto">
+
+                <br>
+
+                <ul class="signin-signup row">
+                    <li class="signin d-block col-6 "><a href="#">sign in</a></li>
+                    <li class="signup d-block col-6 "><a href="index.html">sign up</a></li>
+                </ul>
+
+                <div class="social-container">
+
+                    <div class="social-btn-container">
+                        <div class="social-btn-icon"><i class="fab fa-facebook-f"></i></div>
+                        <button class="social-btn-text btn btn-primary">sign in with facebook</button>
+                    </div>
+
+                    <div class="social-btn-container">
+                        <div class="social-btn-icon"><i class="fab fa-google"></i></div>
+                        <button class="social-btn-text btn btn-primary">sign in with google</div>
+                    </div>
+
+                    <div class="social-btn-container">
+                        <div class="social-btn-icon"><i class="fab fa-instagram"></i></div>
+                        <button class="social-btn-text btn btn-primary">sign in with instagram</button>
+                    </div>
+
+                    <div class="social-btn-container">
+                        <div class="social-btn-icon"><i class="fab fa-twitter"></i></div>
+                        <button class="social-btn-text btn btn-primary">sign in with twitter</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form action="" method="post">
-                        <input type="email" name="" id="" placeholder="Username">
-                    </form>
+                
+                <p>or</p>
+                
+                <div class="input-group mb-3 signin-username">
+                    <div class="input-group-prepend">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fab-fa-user"></i></span>
+                        <input type="text" name="email" class="form-control" placeholder="yours@email.com">
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    Footer
+                <div class="input-group mb-3 signin-password">
+                    <div class="input-group-prepend">
+                        <span class="input-group-addon" id="basic-addon2"><i></i></span>
+                    </div>
+                    <input type="password" name="password" class="form-control" placeholder="your password">
+                </div>
+            
+                <br>
+                <a href="#"> Don't remember your password ?</a>
+                <br>
+                <div class="row">
+                    <button class="btn btn-primary col-12 mt-5" type="submit">log in</button>
                 </div>
             </div>
-        </div>
+        </form>
+
     </div>
 
-   
 
 
 
